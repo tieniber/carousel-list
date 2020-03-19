@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.carousellist.CarouselList" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Carousel List</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Datasource">
+                <property key="data" type="datasource" isList="true" required="false">
+                    <caption>Data source</caption>
+                    <description />
+                </property>
+                <property key="content" type="widgets" required="false" dataSource="data">
+                    <caption>Content</caption>
+                    <description>Widgets using data source</description>
+                </property>  
+            </propertyGroup>
+        </propertyGroup>  
+    </properties>
+</widget>
